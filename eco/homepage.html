@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage EcoWise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header-homepage">
+        <div class="header-content">
+            <button class="hamburger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="logo-header">
+                <img src="assets/img/eco_logo-2.png" alt="Website Logo">
+            </div>
+            <button class="profile-button" onclick="viewProfile()">
+                <i class="fas fa-user"></i>
+            </button>
+        </div>
+        <nav class="nav-menu">
+            <div class="logo-navbar">
+                <img src="assets/img/eco_logo-2.png" alt="Website Logo">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </div>
+            <div class="logo-navbar">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Beranda</a>
+            </div>
+            <div class="logo-navbar">
+                <i class="fa-solid fa-book"></i>
+                <a href="#">Edukasi</a>
+            </div>
+            <div class="logo-navbar">
+                <i class="fa-solid fa-seedling"></i>
+                <a href="#">Tantangan</a>
+            </div>
+            <div class="logo-navbar">
+                <i class="fa-solid fa-gift"></i>
+                <a href="#">Reward</a>
+            </div>
+            <div class="logo-navbar">
+                <i class="fa-solid fa-comments"></i>
+                <a href="#">FAQ</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="profile">
+        <div class="welcome-user">
+            <div class="container-homepage-img">
+                <img src="assets/svg/environment-3.svg" alt="environtment-3">
+            </div>
+            <div class="welcome-text">
+            <p>Selamat Datang</p>
+            <h1 id="username">Loading...</h1>
+        </div>
+        </div>
+        <div class="welcome-user">
+        <div class="text-point">
+        <p id="points"><i class="fa-solid fa-star"> </i><span id="userPoints">Loading...</span> Points</p>
+        </div>
+        <div class="container-homepage-img">
+            <img src="assets/svg/environment-4.svg" alt="environtment-4">
+        </div>
+        </div>
+    </div>
+    
+    <script src="homepage.js"></script>
+</body>
+</html>
