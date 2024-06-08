@@ -2,7 +2,7 @@
 import "../styles/style.css";
 import "../scripts/components/Header";
 import "../scripts/components/Footer";
-import { toggleMenu, closeMenu, navigateToChallenge, viewProfile } from "../scripts/function-nav";
+import { toggleMenu, closeMenu, navigateToChallenge, viewProfile, navigateToDetail } from "../scripts/function-nav";
 
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch data tantangan dari file JSON
@@ -29,7 +29,6 @@ function getRandomChallenge(challenges) {
     return challenges[randomIndex];
 }
 
-// Fungsi untuk menampilkan rekomendasi tantangan dalam elemen HTML
 function displayChallenge(challenge, type) {
     const recommendationContainer = document.getElementById('challenge-recommendations');
 
@@ -42,7 +41,7 @@ function displayChallenge(challenge, type) {
     challengeDiv.classList.add('challenge-recommendation-container-homepage');
 
     challengeDiv.innerHTML = `
-        <div class="recommendation-challenge">
+        <div class="recommendation-challenge" onclick="navigateToDetail('${challenge.name}')">
             <div class="recommendation-challenge-text">
                 <h3 class="kind-of-challenge-${type}">${challenge.kind}</h3>
                 <h2>${challenge.name}</h2>
@@ -57,6 +56,7 @@ function displayChallenge(challenge, type) {
     // Tambahkan elemen tantangan ke dalam kontainer rekomendasi
     recommendationContainer.appendChild(challengeDiv);
 }
+
 
 // Dummy user data (Replace this with your actual user data)
 const userData = {
@@ -83,3 +83,4 @@ window.toggleMenu = toggleMenu;
 window.closeMenu = closeMenu;
 window.navigateToChallenge = navigateToChallenge;
 window.viewProfile = viewProfile;
+window.navigateToDetail = navigateToDetail;

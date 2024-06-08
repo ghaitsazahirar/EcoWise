@@ -16,7 +16,7 @@ module.exports = {
     edukasi: path.resolve(__dirname, 'src/scripts/edukasi.js'),
     detailartikel: path.resolve(__dirname, 'src/scripts/edukasi.js'),
     uploadgambar: path.resolve(__dirname, 'src/scripts/uploadgambar.js'),
-    uploadberhasil: path.resolve(__dirname, 'src/scripts/login.js'),
+    uploadberhasil: path.resolve(__dirname, 'src/scripts/uploadberhasil.js'),
     reward: path.resolve(__dirname, 'src/scripts/reward.js'),
   },
   output: {

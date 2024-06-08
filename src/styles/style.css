@@ -1174,6 +1174,10 @@ color:#407E63;
     justify-content: center;
 }
 
+.detail-challenge-text p{
+color:#407E63;
+text-align: center;
+}
 .detail-challenge-image{
     margin-top: 10px;
 }
