@@ -1,0 +1,57 @@
+{
+    "daily": [
+      {
+        "kind": "Harian",
+        "name": "Ayo Memilah Sampah",
+        "description": "Dalam tantangan ini, kamu akan belajar dan mempraktikkan cara memisahkan sampah rumah tangga dengan benar.",
+        "image": "assets/svg/environment-2.svg",
+        "detail": "Siap untuk membuat perubahan besar dalam satu hari? Ikuti tantangan harian ini dan mulailah memilah sampah dengan benar! Pilah sampah organik, anorganik, dan daur ulang di rumahmu dan unggah bukti untuk mengumpulkan poin. Dapatkan hadiah menarik dan jadilah pahlawan lingkungan sekarang!",
+        "steps": [
+          "1. Siapkan tempat sampah terpisah untuk setiap kategori: organik, plastik, kertas, dan logam.",
+          "2. Setiap kali membuang sampah, pastikan untuk memilahnya sesuai dengan kategori yang sudah disiapkan.",
+          "3. Dokumentasikan kegiatan memilah sampah setiap hari dengan foto."
+        ]
+      },
+      {
+        "kind": "Harian",
+        "name": "Olahraga Pagi",
+        "description": "Lakukan olahraga ringan setiap pagi untuk menjaga kesehatan tubuh.",
+        "image": "assets/svg/environment-2.svg",
+        "detail": "Siap untuk membuat perubahan besar dalam satu hari? Ikuti tantangan harian ini dan mulailah memilah sampah dengan benar! Pilah sampah organik, anorganik, dan daur ulang di rumahmu dan unggah bukti untuk mengumpulkan poin. Dapatkan hadiah menarik dan jadilah pahlawan lingkungan sekarang!",
+        "steps": [
+          "1. Bangun lebih pagi dan kenakan pakaian olahraga yang nyaman.",
+          "2. Lakukan pemanasan selama 5-10 menit.",
+          "3. Pilih aktivitas olahraga yang disukai, seperti jogging, stretching, atau yoga, selama 20-30 menit."
+        ]
+      }
+    ],
+    "weekly": [
+      {
+        "kind": "Mingguan",
+        "name": "Kurangi Penggunaan Plastik",
+        "description": "Dalam tantangan ini, kamu harus mengurangi penggunaan plastik sekali pakai selama satu minggu.",
+        "image": "assets/svg/environment-6.svg",
+        "detail": "Siap untuk membuat perubahan besar dalam satu hari? Ikuti tantangan mingguan ini dan mulailah mengurangi penggunaan plastik sekali pakai! Bawa tas belanja sendiri, hindari penggunaan botol plastik sekali pakai, dan unggah bukti untuk mengumpulkan poin. Dapatkan hadiah menarik dan jadilah pahlawan lingkungan sekarang!",
+        "steps": [
+          "1. Mulailah dengan membawa tas belanja sendiri setiap kali berbelanja.",
+          "2. Gunakan botol minum yang dapat diisi ulang daripada botol plastik sekali pakai.",
+          "3. Dokumentasikan kegiatan mengurangi penggunaan plastik setiap hari dengan foto."
+        ]
+      }
+    ],
+    "base": [
+      {
+        "kind": "Dasar",
+        "name": "Membaca Buku",
+        "description": "Luangkan waktu 30 menit setiap hari untuk membaca buku.",
+        "image": "assets/svg/environment-3.svg",
+        "detail": "Siap untuk membuat perubahan besar dalam satu hari? Ikuti tantangan dasar ini dan mulailah membaca buku setiap hari! Pilih buku yang menarik minatmu, luangkan waktu 30 menit setiap hari untuk membacanya, dan unggah bukti untuk mengumpulkan poin. Dapatkan hadiah menarik dan jadilah pahlawan literasi sekarang!",
+        "steps": [
+          "1. Pilih buku yang menarik minatmu.",
+          "2. Luangkan waktu 30 menit setiap hari untuk membaca buku tersebut.",
+          "3. Dokumentasikan kegiatan membaca buku setiap hari dengan foto."
+        ]
+      }
+    ]
+  }
+  
