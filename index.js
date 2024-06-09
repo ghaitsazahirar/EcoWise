@@ -38,6 +38,12 @@ const Landing = () => {
                     <input type="password" id="password" name="password" placeholder="Masukkan Password" required>
                     <i class="fa-solid fa-unlock"></i>
                 </div>
+            <div class="form-group">
+                <label for="confirm-password">Konfirmasi Password</label>
+                <div class="form-group-login">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Masukkan Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
             </div>
         
         <div class="btn-register">
