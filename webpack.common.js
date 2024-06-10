@@ -18,6 +18,9 @@ module.exports = {
     uploadgambar: path.resolve(__dirname, 'src/scripts/uploadgambar.js'),
     uploadberhasil: path.resolve(__dirname, 'src/scripts/uploadberhasil.js'),
     reward: path.resolve(__dirname, 'src/scripts/reward.js'),
+    ubahpassword: path.resolve(__dirname, 'src/scripts/login.js'),
+    confirmation: path.resolve(__dirname, 'src/scripts/confirmation.js'),
+    faq: path.resolve(__dirname, 'src/scripts/faq.js'),
   },
   output: {
     filename: '[name].bundle.js',
@@ -105,6 +108,21 @@ module.exports = {
       filename: 'reward.html',
       template: path.resolve(__dirname, 'src/templates/reward.html'),
       chunks: ['reward'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'ubahpassword.html',
+      template: path.resolve(__dirname, 'src/templates/ubahpassword.html'),
+      chunks: ['ubahpassword'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'confirmation.html',
+      template: path.resolve(__dirname, 'src/templates/confirmation.html'),
+      chunks: ['confirmation'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'faqpage.html',
+      template: path.resolve(__dirname, 'src/templates/faqpage.html'),
+      chunks: ['faq'],
     }),
 
 

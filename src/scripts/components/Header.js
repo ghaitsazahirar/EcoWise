@@ -9,7 +9,7 @@ class EcoHeader extends HTMLElement {
                 <span class="bar"></span>
             </button>
             <div class="logo-header">
-                <img src="assets/svg/logo-ecowise.svg" alt="Website Logo">
+                <img src="assets/img/ecowise-logo.png" alt="Website Logo">
             </div>
             <button class="profile-button" onclick="viewProfile()">
                 <i class="fas fa-user"></i>
@@ -38,7 +38,7 @@ class EcoHeader extends HTMLElement {
             </div>
             <div class="logo-navbar">
                 <i class="fa-solid fa-comments"></i>
-                <a href="#">FAQ</a>
+                <a href="faqpage.html">FAQ</a>
             </div>
         </nav>
     </header>`;

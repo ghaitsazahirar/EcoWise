@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
@@ -267,6 +267,7 @@ p {
     font-style: normal;
     bottom: 0;
     left: 0;
+    align-items: center;
 }
 
 .footer p {
@@ -507,19 +508,19 @@ a {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 1240px;
     z-index: 1000;
     padding-left: 20px;
     padding-right: 20px;
-    transition: padding-top 0.3s ease; /* Tambahkan transisi untuk efek pergeseran */
+    transition: padding-top 0.5s ease; /* Tambahkan transisi untuk efek pergeseran */
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 95%;
     transition: filter 0.3s ease-in-out;
+    
 }
 
 .header-homepage .logo img {
@@ -605,7 +606,7 @@ a {
     padding: 10px 0;
 }
 .logo-header img {
-    max-width: 120px;
+    max-width: 90px;
 }
 
 .profile-button {
@@ -878,6 +879,7 @@ color:#407E63;
     margin-bottom: 2%;
     padding: 2%;
     border-radius: 15px;
+    cursor: pointer;
 }
 .recommendation-challenge-images{
     margin-left: 10px;
@@ -972,6 +974,7 @@ color:#407E63;
     cursor: pointer; /* Mengubah kursor saat hover */
     border-radius: 15px; /* Membuat sudut tombol melengkung */
     background-color: transparent; /* Latar belakang transparan */
+    font-family: "Poppins", sans-serif;
 }
 
 .all-challenge-button.active,
@@ -1259,6 +1262,7 @@ text-align: center;
     margin-bottom: 2%;
     margin-top: 2%;
     font-size: 1rem;
+    font-family: "Poppins", sans-serif;
 }
 
 .upload-button:hover {
@@ -1324,6 +1328,8 @@ text-align: center;
     margin-top: 2%;
     font-size: 1rem;
     width: 50%; /* Set the width to 80% of the parent container */
+    font-family: "Poppins", sans-serif;
+    
 }
 
 .image-upload{
@@ -1419,6 +1425,7 @@ text-align: center;
     padding: 15px;
     border: 5px solid #ffffff;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .reward-list img {
@@ -1430,4 +1437,140 @@ text-align: center;
     margin: 0;
     color: #407E63;
     text-align: center;
+}
+
+.confirm-reward{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-confirm-reward-1{
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.container-confirm-reward-1, .confirmation-container p{
+    color: #407E63;
+}
+.container-confirm-reward-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.confirmation-container {
+    text-align: center;
+}
+.confirmation-container img{
+width: 300px
+}
+.confirmation-message i {
+    background: linear-gradient(90deg, #F4B400, #FDD835, #FFFF8D);
+}
+
+.star-point {
+    display: flex;
+    align-items: center; /* Menjaga elemen pada garis tengah vertikal */
+    text-align: center;
+    justify-content: center;
+  }
+.confirmation-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.button-confirm{
+    background-color: #F4B400; /* Green background */
+    color: #FFFFFF; /* White text */
+    padding: 10px 40px; /* Some padding */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Add a pointer on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the container an inline-block */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.confirmation-container a {
+    text-decoration: underline;
+    font-size: small;
+}
+
+/*Faq Page*/
+.faq-container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:9%;
+    text-align: center;
+    padding: 20px 30px;
+}
+.faq-element p{
+    text-align: center;
+}
+
+.faq-element p,.question-list p{
+    color:#407E63;
+}
+.faq-element img{
+    width:300px
+}
+.faq-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:2%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.question-container {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen anak secara vertikal */
+    align-items: center; /* Menyelaraskan elemen anak di tengah secara horizontal */
+    justify-content: center; /* Menyelaraskan elemen anak di tengah secara vertikal */
+    margin-top: 1%;
+    text-align: center;
+    width: 90%;
+    padding: 20px 30px;
+}
+
+.question-list {
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px 30px;
+    margin-bottom: 20px; /* Menambahkan margin bawah agar ada jarak antar elemen */
+}
+
+
+.question-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.question-answer {
+    display: none; /* Sembunyikan jawaban secara default */
+}
+
+.question-title-container {
+    cursor: pointer; /* Ubah cursor menjadi pointer untuk menunjukkan interaktifitas */
+}
+
+.question-title-container.active + .question-answer {
+    display: block; /* Tampilkan jawaban ketika .active ditambahkan ke .question-title-container */
 }
