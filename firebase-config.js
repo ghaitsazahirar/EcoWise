@@ -1,22 +1,13 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
-
-// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAZEDFgMZA5JkIX0QD7_fjGCphAMd6Omrc",
-    authDomain: "fast-chess-424409-a3.firebaseapp.com",
-    projectId: "fast-chess-424409-a3",
-    storageBucket: "fast-chess-424409-a3.appspot.com",
-    messagingSenderId: "618698036528",
-    appId: "1:618698036528:web:a40beb906f93d7566e24f5",
-    measurementId: "G-V6E3M98Z74"
-  };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const database = getDatabase(app);
-
-export { auth, database };
+  apiKey: "AIzaSyD80GZeXbbQvjZRhOuVN0hybwRplwJfFt0",
+  authDomain: "ecowise-47f54.firebaseapp.com",
+  databaseURL: "https://ecowise-47f54-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "ecowise-47f54",
+  storageBucket: "ecowise-47f54.appspot.com",
+  messagingSenderId: "510097608746",
+  appId: "1:510097608746:web:73c068c148c3b72891b353",
+  measurementId: "G-HBGKBDT8Y4"
+};
+  const app = firebase.initializeApp(firebaseConfig);
