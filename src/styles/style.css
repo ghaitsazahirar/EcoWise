@@ -65,8 +65,9 @@ head img{
     text-align: center;
     max-width: 100%;
     background-color: #8AAF9E;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .container-3{
@@ -86,6 +87,10 @@ head img{
     padding-right: 20px;
     padding-bottom: 50px;
     margin-bottom: 0;
+}
+.container-4 p {
+    text-align: center;
+    margin: 0 5px;
 }
 
 .inline {
@@ -111,7 +116,7 @@ head img{
 .fitur .content {
     flex: 1; 
 }
-.content p{
+.content p {
 text-align: left;
 color: #407E63;
 }
@@ -267,6 +272,7 @@ p {
     font-style: normal;
     bottom: 0;
     left: 0;
+    right: 0;
     align-items: center;
 }
 
@@ -375,12 +381,12 @@ p {
     margin-bottom: 10px;
 }
 
-.forget-password-container h1,p{
-    text-align: left;
+.forget-password-container h1{
+    text-align: center;
 }
 .forget-password-container p{
     color: #313131;
-    text-align: left;
+    text-align: center;
 }
 /* Style for labels */
 label {
@@ -678,7 +684,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0 auto; /* Centers the container horizontally */
     padding: 20px 30px; /* Optional: padding around the container */
     box-sizing: border-box; /* Ensures padding is included in the width */
@@ -688,21 +694,22 @@ a {
     margin-bottom: 5%;
 }
 
-.lets-chage-point-text {
+.lets-change-point-text {
     /* Optional: add some spacing around the text */
     margin-right: 20px;
 }
 
-.lets-chage-point-text p {
+.lets-change-point-text p {
     color:#407E63;
+    text-align: left;
 
 }
-.lets-chage-point-text h2 {
+.lets-change-point-text h2 {
     color:#2F4841;
 
 }
 
-.lets-chage-point-button {
+.lets-change-point-button {
     /* Optional: add some spacing around the button */
     margin-left: 20px;
 }
@@ -743,6 +750,12 @@ a {
 .unique-shape-text{
 margin-right: 4%;
 }
+.unique-shape-text p{
+text-align: left;
+}
+.unique-shape-text h1{
+text-align: left;
+}
 .unique-shape-image img{
 width:90%;
 }
@@ -757,7 +770,6 @@ width:90%;
 /*lets-do-challenge*/
 .lets-do-challenge{
     margin-top: 2%;
-    margin-bottom: 5%;
 }
 .lets-do-challenge h2{
     text-align: left;
@@ -898,6 +910,7 @@ font-size:80%;
 }
 .recommendation-challenge-text p{
 color:#407E63;
+text-align: left;
 }
 
 .kind-of-challenge-weekly-label{
@@ -917,6 +930,9 @@ color:#407E63;
     box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
     border-radius: 15px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .kind-of-challenge-daily {
     background-color: #F4B400; /* Ganti dengan warna yang diinginkan */
@@ -928,6 +944,9 @@ color:#407E63;
     box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
     border-radius: 15px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .kind-of-challenge-base {
@@ -940,12 +959,16 @@ color:#407E63;
     box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
     border-radius: 15px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Page katrgori tantangan*/
 
 .challenge-page{
     margin-top: 1%;
+    width: 100%;
 }
 .challenge-category {
     width: 80%;
@@ -1012,12 +1035,21 @@ color:#407E63;
 }
 
 /*Education*/
-.education-container{
-    margin-top: 5%;
+.container-education{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; /* Centers the container horizontally */
+    width: 98%;
+    margin-top: 2%;
 }
-.education-container h2{
-    text-align: left;
-    margin-left: 10%;
+.education-container{
+    width: 95%;
+    
+}
+.container-education h2{
+    text-align: center;
 }
 
 .education-container-2 {
@@ -1404,10 +1436,11 @@ text-align: center;
 
 .reward-text {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .reward-text h2 ,.reward-text p {
     color: #263238;
+    text-align: left;
 }
 
 
@@ -1573,4 +1606,142 @@ width: 300px
 
 .question-title-container.active + .question-answer {
     display: block; /* Tampilkan jawaban ketika .active ditambahkan ke .question-title-container */
+}
+
+/*Responsife*/
+@media only screen and (max-width: 600px) {
+    /*Index*/
+    .container-2 p {
+        text-align: center;
+        margin: 0 5px;
+    }
+    .content p {
+        text-align: left;
+        }
+    .header-homepage {
+    }
+
+    .header-content {
+        margin-right:35px;
+    }
+
+    .header-homepage .logo img {
+        width: 80px; /* Mengurangi ukuran logo untuk ruang yang lebih sedikit */
+    }
+    .nav-menu{
+        width:40%;
+        margin: 0 3px;
+    }
+    #profile{
+        margin-top:30%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .container-homepage-img{
+        display: none;
+    }
+    .unique-shape{
+        margin-top:30%;
+    }
+    h1 {
+        font-size: 29px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+
+    .lets-change-point{
+        padding: 5px 10px;
+        width: 90%;
+        height:100;
+    }
+    .lets-change-point-text{
+        margin:0;
+        padding: 0;
+    }
+    .lets-change-point-button{
+        font-size: 14px;
+        padding: 0;
+        margin-right: 0;
+    }
+    .kind-challenge{
+        width: 90%;
+    }
+    .kind-challenge-2{
+        padding: 3px 3px;
+        border-radius: 15px;
+        width: 118px;
+        height: 100px;
+    }
+    .kind-challenge-2 img{
+        margin-top: 2px;
+        width: 50%x;
+    }
+    .kind-challenge-2 h3{
+        margin-bottom: 3px;
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .recommendation-challenge-images img {
+        width: 120px
+    }
+    .kind-of-challenge-weekly,.kind-of-challenge-daily,.kind-of-challenge-base {
+        width: 80px; /* Tentukan lebar tetap */
+        height: 30px; /* Tentukan tinggi tetap */
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .recommendation-challenge-text{
+        margin-left: 5px;
+    }
+
+    /*Edukasi*/
+    .education-container-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+        gap: 30px;
+        padding: 20px;
+        background-color:none;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 15px;
+        justify-content: center; /* Menengahkannya secara horizontal */
+        margin-top: 2%;
+    }
+    .education-container h2{
+        text-align: center;
+        margin-right: 10px;
+    }
+    .faq-container-1{
+        margin-top: 20%;
+    }
+    .challenge-category {
+        width: 84%;
+        margin: 0 auto; /* Centers the container horizontally */
+        padding: 10px 20px; /* Optional: padding around the container */
+    }
+    
+    .challenge-category h2 {
+        margin-bottom: 20px; /* Beri jarak lebih besar antara h2 dan tombol */
+    }
+    
+    .challenge-category-button {
+        display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
+        justify-content: flex-start; /* Menyelaraskan item ke tepi kiri */
+        gap: 5px; /* Memberikan jarak antar tombol */
+    }
+    
+    .challenge-category-button button {
+        padding: 10px 20px; /* Menambahkan padding untuk tombol */
+        font-size: 12px; /* Mengatur ukuran font */
+        cursor: pointer; /* Mengubah kursor saat hover */
+        border-radius: 12px; 
+    }
+    
 }
