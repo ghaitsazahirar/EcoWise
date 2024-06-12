@@ -1,5 +1,78 @@
 import "../styles/style.css"
 import "../scripts/components/Footer";
+// script.js
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Daftarkan plugin ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Animasi untuk elemen dengan ScrollTrigger
+    gsap.from(".header", {
+        duration: 1.5,
+        y: -50,
+        opacity: 0,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".header",
+            start: "top top+=100",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.from(".container-1 h1, .container-1 p, .container-1-img", {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        ease: "power1.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".container-1",
+            start: "top bottom-=100",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.from(".container-2 h1, .container-2 p, .fitur", {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        ease: "power1.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".container-2",
+            start: "top bottom-=100",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.from(".container-3 h1, .comments-section", {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        ease: "power1.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".container-3",
+            start: "top bottom-=100",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.from(".container-4 h1, .container-4 p, .gabung", {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        ease: "power1.out",
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".container-4",
+            start: "top bottom-=100",
+            toggleActions: "play none none none"
+        }
+    });
+});
 
 const comments = [
     {

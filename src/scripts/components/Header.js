@@ -21,24 +21,24 @@ class EcoHeader extends HTMLElement {
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </div>
             <div class="logo-navbar">
-                <i class="fa-solid fa-house"></i>
                 <a href="homepage.html">Beranda</a>
+                <i class="fa-solid fa-house"></i>
             </div>
             <div class="logo-navbar">
-                <i class="fa-solid fa-book"></i>
                 <a href="edukasi.html">Edukasi</a>
+                <i class="fa-solid fa-book"></i>
             </div>
             <div class="logo-navbar">
-                <i class="fa-solid fa-seedling"></i>
                 <a href="kategoritantangan.html">Tantangan</a>
+                <i class="fa-solid fa-seedling"></i>
             </div>
             <div class="logo-navbar">
-                <i class="fa-solid fa-gift"></i>
                 <a href="reward.html">Reward</a>
+                <i class="fa-solid fa-gift"></i>
             </div>
             <div class="logo-navbar">
-                <i class="fa-solid fa-comments"></i>
                 <a href="faqpage.html">FAQ</a>
+                <i class="fa-solid fa-comments"></i>
             </div>
         </nav>
     </header>`;

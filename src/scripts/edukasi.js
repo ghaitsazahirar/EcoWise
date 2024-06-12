@@ -2,6 +2,80 @@ import "../styles/style.css";
 import "../scripts/components/Header";
 import "../scripts/components/Footer";
 import { toggleMenu, closeMenu, navigateToChallenge, viewProfile } from "../scripts/function-nav";
+// edukasi-script.js
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Daftarkan plugin ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Animasi untuk elemen dengan class container-shape
+    const uniqueShape = document.querySelector(".unique-shape");
+    const uniqueShapeText = document.querySelector(".unique-shape-text");
+    const uniqueShapeImage = document.querySelector(".unique-shape-image-education");
+
+    gsap.from(uniqueShapeText, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: uniqueShape,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.from(uniqueShapeImage, {
+        opacity: 0,
+        x: -50,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: uniqueShape,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    // Animasi untuk elemen dengan class container-education
+    gsap.from(".container-education", {
+        duration: 1.5,
+        opacity: 0,
+        y: 50,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".container-education",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    const educationContainers = document.querySelectorAll(".education-list-container");
+
+    educationContainers.forEach((container, index) => {
+        gsap.from(container, {
+            duration: 1.5,
+            opacity: 0,
+            x: -100,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: container,
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none none",
+                markers: true, // Untuk memudahkan pemecahan masalah, bisa dihapus saat sudah selesai
+                onToggle: self => {
+                    if (self.isActive) {
+                        gsap.to(container, { opacity: 1, x: 0, duration: 1 });
+                    }
+                }
+            }
+        });
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     const articles = [

@@ -759,6 +759,9 @@ text-align: left;
 .unique-shape-image img{
 width:90%;
 }
+.unique-shape-image-education img{
+    width:90%;
+    }
 /*new-challenge*/
 .new-challenge{
     margin-top: 5%;
@@ -1052,6 +1055,11 @@ text-align: left;
     text-align: center;
 }
 
+.education-container p {
+    font-size: 15px;
+    text-align: center;
+}
+
 .education-container-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
@@ -1255,6 +1263,9 @@ text-align: center;
     align-items: center;
     margin-bottom: 1%;
 }
+.challenge-steps p {
+    text-align: left;
+}
 
 .upload-image-2{
     margin-top: 0;
@@ -1385,7 +1396,7 @@ text-align: center;
 }
 
 .upload-complete {
-    margin-top:7%;
+    margin-top:1%;
     text-align: center;
     background-color: #f9f9f9;
     padding: 20px 30px;
@@ -1551,10 +1562,12 @@ width: 300px
 }
 .faq-element p{
     text-align: center;
+    color:#407E63;
 }
 
-.faq-element p,.question-list p{
+.question-list p{
     color:#407E63;
+    text-align: left;
 }
 .faq-element img{
     width:300px
@@ -1608,8 +1621,14 @@ width: 300px
     display: block; /* Tampilkan jawaban ketika .active ditambahkan ke .question-title-container */
 }
 
-/*Responsife*/
+/*Responsive*/
 @media only screen and (max-width: 600px) {
+    .nav-menu .logo-navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 10px;
+    }
     /*Index*/
     .container-2 p {
         text-align: center;
@@ -1656,6 +1675,17 @@ width: 300px
         font-size: 13px;
     }
 
+    .unique-shape-text{
+    margin-right: 40px;
+    margin-left: -40px;
+    }
+    .unique-shape-image img{
+    width:120px;
+     }
+    .unique-shape-image-education img{
+     width:150%;
+    }
+
     .lets-change-point{
         padding: 5px 10px;
         width: 90%;
@@ -1692,8 +1722,8 @@ width: 300px
         width: 120px
     }
     .kind-of-challenge-weekly,.kind-of-challenge-daily,.kind-of-challenge-base {
-        width: 80px; /* Tentukan lebar tetap */
-        height: 30px; /* Tentukan tinggi tetap */
+        width: 90px; /* Tentukan lebar tetap */
+        height: 40px; /* Tentukan tinggi tetap */
         border-radius: 10px;
         padding: 3px;
     }
@@ -1704,9 +1734,9 @@ width: 300px
     /*Edukasi*/
     .education-container-2 {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-        gap: 30px;
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 150px));
+        gap: 20px;
+        padding: 10px;
         background-color:none;
         width: 95%;
         margin: 0 auto;
@@ -1716,7 +1746,14 @@ width: 300px
     }
     .education-container h2{
         text-align: center;
-        margin-right: 10px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .education-container p {
+        margin-top: 3px;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 15px;
     }
     .faq-container-1{
         margin-top: 20%;
@@ -1743,5 +1780,13 @@ width: 300px
         cursor: pointer; /* Mengubah kursor saat hover */
         border-radius: 12px; 
     }
-    
+    .detail-challenge-container-1{
+        margin-top: 21%;
+    }
+    .upload-image-container{
+        margin-top: 20%;
+    }
+    .upload-complete{
+        margin-top: -500px;
+    }
 }

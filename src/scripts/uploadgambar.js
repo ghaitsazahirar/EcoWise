@@ -1,4 +1,6 @@
 import "../styles/style.css"
+import "../scripts/components/Header";
+import "../scripts/components/Footer";
 import { toggleMenu, closeMenu} from "../scripts/function-nav";
 document.getElementById('upload').addEventListener('change', function() {
     const file = this.files[0];

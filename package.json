@@ -43,6 +43,7 @@
     "workbox-cli": "^7.1.0"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "idb": "^8.0.0",
     "regenerator-runtime": "^0.14.0"
   },
