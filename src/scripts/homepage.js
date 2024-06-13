@@ -3,6 +3,56 @@ import "../styles/style.css";
 import "../scripts/components/Header";
 import "../scripts/components/Footer";
 import { toggleMenu, closeMenu, navigateToChallenge, viewProfile, navigateToDetail } from "../scripts/function-nav";
+// homepage-animation.js
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elementsToAnimate = [
+        ".welcome-user",
+        ".lets-change-point",
+        ".lets-do-challenge",
+        ".challenge-recommendation",
+        ".kind-challenge-2"
+    ];
+
+    elementsToAnimate.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach((element, index) => {
+            gsap.from(element, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                delay: index * 0.2,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    end: "bottom 20%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    });
+
+    // Animasi untuk setiap challenge recommendation
+    const challengeRecommendations = document.querySelectorAll("#challenge-recommendations > div");
+    challengeRecommendations.forEach((elem, index) => {
+        gsap.from(elem, {
+            opacity: 0,
+            x: -50,
+            duration: 1,
+            delay: index * 0.3, // Penundaan antara setiap elemen
+            scrollTrigger: {
+                trigger: elem,
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch data tantangan dari file JSON
