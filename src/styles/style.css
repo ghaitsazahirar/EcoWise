@@ -19,6 +19,10 @@ head img{
     font-size: 16px;
     margin-right: 10%;
     transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+.login-button{
+    font-size: 18px;
 }
 
 .header .login-button:hover {
@@ -37,6 +41,8 @@ head img{
     cursor: pointer;
     margin-top: 30px;
     transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
 }
 
 .gabung:hover {
@@ -45,12 +51,28 @@ head img{
 
 .container-1 {
     max-width: 100%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    padding-top: 150px;
-    text-align: center;
-}
+    margin-top: 70px;
+    margin-left:20px;
+    margin-right:20px ;
 
+}
+.container-1-text {
+    flex: 1;
+}
+.container-1-text h1 {
+    text-align: left;
+    }
+.container-1-text p {
+text-align: left;
+}
+.container-1-img {
+    flex: 1;
+    text-align: right; /* This aligns the image to the right */
+}
 .container-1-img img{
     margin-top: 30px;
     margin-bottom: 50px;
@@ -69,7 +91,13 @@ head img{
     padding-bottom: 30px;
     text-align: center;
 }
-
+.container-2-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin-bottom: 1%;
+}
 .container-3{
     text-align: center;
     padding-top: 50px;
@@ -102,8 +130,7 @@ head img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
-    width: 100%;
+    width: 70%;
     margin: 10px auto;
     padding: 20px;
     box-sizing: border-box;
@@ -111,13 +138,19 @@ head img{
     border: 1px solid #ddd;
     border-radius: 10px; 
     text-align: left;
+    margin-top:0;
 }
 
 .fitur .content {
     flex: 1; 
 }
+.content h2 {
+    font-size: 30px;
+    margin-top: -5px;
+}
 .content p {
 text-align: left;
+font-size: 16px;
 color: #407E63;
 }
 
@@ -134,11 +167,11 @@ color: #407E63;
 #ecowise-h1 {
     background: linear-gradient(
         to right, 
-        #F4B400 45%, 
-        #FFFF8D 47%, 
-        #89AF9F 50%, 
-        #6E897F 55%, 
-        #114E3B 80%
+        #F4B400 15%, 
+        #FFFF8D 17%, 
+        #89AF9F 30%, 
+        #6E897F 45%, 
+        #114E3B 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -183,9 +216,6 @@ h3{
 
 }
 
-.container-1.container-3,.comment-container{
-    color: #407E63;
-}
 p {
     margin-bottom: 20px;
     color: #F5F5F5;
@@ -238,10 +268,12 @@ p {
 
 .comment-container h3 {
     margin: 5px 0;
+    font-size: 30px;
 }
 
 .comment-container p {
     font-style: italic;
+    font-size: 12px;
 }
 
 .buttons {
@@ -274,6 +306,7 @@ p {
     left: 0;
     right: 0;
     align-items: center;
+    font-size: 18px;
 }
 
 .footer p {
@@ -440,7 +473,7 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 100%;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -488,7 +521,7 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 100%;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -752,9 +785,11 @@ margin-right: 4%;
 }
 .unique-shape-text p{
 text-align: left;
+font-size: 24px;
 }
 .unique-shape-text h1{
 text-align: left;
+font-size: 48px;
 }
 .unique-shape-image img{
 width:90%;
@@ -980,7 +1015,8 @@ text-align: left;
 }
 
 .challenge-category h2 {
-    margin-bottom: 20px; /* Beri jarak lebih besar antara h2 dan tombol */
+    margin-bottom: 35px;
+    font-size: 36px;
 }
 
 .challenge-category-button {
@@ -996,7 +1032,7 @@ text-align: left;
     text-align: center; /* Menyelaraskan teks di tengah */
     text-decoration: none; /* Menghapus garis bawah pada teks */
     display: inline-block; /* Membuat tombol inline-block */
-    font-size: 16px; /* Mengatur ukuran font */
+    font-size: 18px; /* Mengatur ukuran font */
     cursor: pointer; /* Mengubah kursor saat hover */
     border-radius: 15px; /* Membuat sudut tombol melengkung */
     background-color: transparent; /* Latar belakang transparan */
@@ -1053,6 +1089,7 @@ text-align: left;
 }
 .container-education h2{
     text-align: center;
+    font-size: 36px;
 }
 
 .education-container p {
@@ -1076,7 +1113,7 @@ text-align: left;
 #education-list-container {
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1084,6 +1121,7 @@ text-align: left;
     flex-direction: column;
     align-items: center; /* Untuk menengahkannya secara horizontal */
     text-align: center; /* Untuk menengahkannya secara horizontal */
+    padding-bottom: 5px;
 }
 
 #education-list-container:hover {
@@ -1094,6 +1132,12 @@ text-align: left;
 #education-list-container img {
     width: 100%;
     height: auto;
+}
+#education-list-container h2 {
+    font-size: 20px;
+}
+#education-list-container p {
+    font-size: 16px;
 }
 
 .article-title {
@@ -1182,7 +1226,13 @@ text-align: left;
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-size: 1.5rem;
+    color: #2F4841;
 }
+.icon-others-challenge h3{
+    margin-right: 10px;
+}
+
 
 .detail-challenge-back-btn i {
     margin-right: 8px; /* Menambah jarak antara ikon dan teks */
@@ -1621,8 +1671,93 @@ width: 300px
     display: block; /* Tampilkan jawaban ketika .active ditambahkan ke .question-title-container */
 }
 
+/* Font Size Element*/
+.container-1-text h1,.container-2-text h1 ,.container-3 h1,.container-4 h1{
+    font-size: 48px;
+}
+.container-2-text p {
+    text-align: center;
+}
+.container-1-text p,.container-2-text p,.container-3 p,.container-4 p{
+    color: #407E63;
+    font-size: 24px;
+    width: 100%;
+}
+.fitur-unggulan{
+    width: 70%;
+}
 /*Responsive*/
+/* Gaya untuk layar dengan lebar maksimal 380px */
+@media only screen and (max-width: 380px) {
+    .challenge-category-button button {
+        padding: 5px 11px; /* Menambahkan padding untuk tombol */
+        font-size: 13px; /* Mengatur ukuran font */
+        cursor: pointer; /* Mengubah kursor saat hover */
+        border-radius: 10px; /* Mengatur radius border */
+    }
+}
+
+/* Gaya untuk layar dengan lebar maksimal 430px */
+/* Ini mencakup rentang 381px hingga 430px */
+@media only screen and (min-width: 381px) and (max-width: 430px) {
+    .challenge-category-button button {
+        padding: 7px 15px; /* Menambahkan padding untuk tombol */
+        font-size: 14px; /* Mengatur ukuran font */
+        cursor: pointer; /* Mengubah kursor saat hover */
+        border-radius: 12px; /* Mengatur radius border */
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    /* Font Size Elemen*/
+.container-1-text h1,.container-2-text h1 ,.container-3 h1,.container-4 h1{
+    font-size: 34px;
+    text-align: center;
+}
+.container-2-text{
+    margin-bottom: 30px;
+}
+#ecowise-h1 {
+    background: linear-gradient(
+        to right, 
+        #F4B400 35%, 
+        #FFFF8D 57%, 
+        #89AF9F 60%, 
+        #6E897F 65%, 
+        #114E3B 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container-2-text p,.container-1-text p {
+    text-align: center;
+}
+.container-1-text p,.container-2-text p,.container-3 p,.container-4 p{
+    font-size: 18px;
+}
+.content h2 {
+    font-size: 22px;
+}
+.fitur{
+    width: 90%;
+}
+.comment-container h3 {
+    font-size: 22px;
+}
+.comment-container p{
+    font-size: 12px;
+}
+.unique-shape-text p{
+    font-size: 18px;
+    text-align: center;
+}
+.unique-shape-text h1{
+    text-align: center;
+    font-size: 34px;
+}
+.btn-register button,.btn-login button {
+    font-size: 14px;
+}
     .nav-menu .logo-navbar {
         display: flex;
         justify-content: space-evenly;
@@ -1636,10 +1771,8 @@ width: 300px
     }
     .content p {
         text-align: left;
+        font-size: 16px;
         }
-    .header-homepage {
-    }
-
     .header-content {
         margin-right:35px;
     }
@@ -1674,18 +1807,54 @@ width: 300px
     p{
         font-size: 13px;
     }
+    .login-container,.forget-password-container,.register-container {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .container-1 {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container-shape{
+        margin-top: 30%;
+    }
+    .unique-shape {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
     .unique-shape-text{
-    margin-right: 40px;
-    margin-left: -40px;
-    }
+        margin-right: 4%;
+        }
     .unique-shape-image img{
     width:120px;
+    margin-left: 0;
      }
     .unique-shape-image-education img{
-     width:150%;
+     width:120px;
     }
-
+    .container-education h2{
+        text-align: center;
+        font-size: 26px;
+    }
+    #education-list-container h2 {
+        font-size: 14px;
+    }
+    #education-list-container p {
+     display: none;
+    }
     .lets-change-point{
         padding: 5px 10px;
         width: 90%;
@@ -1704,10 +1873,10 @@ width: 300px
         width: 90%;
     }
     .kind-challenge-2{
-        padding: 3px 3px;
+        padding: 3px 0;
         border-radius: 15px;
-        width: 118px;
-        height: 100px;
+        width: 102px;
+        height:85px;
     }
     .kind-challenge-2 img{
         margin-top: 2px;
@@ -1734,11 +1903,11 @@ width: 300px
     /*Edukasi*/
     .education-container-2 {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 150px));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
         gap: 20px;
-        padding: 10px;
+        padding: 6px;
         background-color:none;
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         border-radius: 15px;
         justify-content: center; /* Menengahkannya secara horizontal */
@@ -1765,20 +1934,15 @@ width: 300px
     }
     
     .challenge-category h2 {
-        margin-bottom: 20px; /* Beri jarak lebih besar antara h2 dan tombol */
+        margin-bottom: 25px;
+        font-size: 26px;
     }
+    
     
     .challenge-category-button {
-        display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
-        justify-content: flex-start; /* Menyelaraskan item ke tepi kiri */
-        gap: 5px; /* Memberikan jarak antar tombol */
-    }
-    
-    .challenge-category-button button {
-        padding: 10px 20px; /* Menambahkan padding untuk tombol */
-        font-size: 12px; /* Mengatur ukuran font */
-        cursor: pointer; /* Mengubah kursor saat hover */
-        border-radius: 12px; 
+        display: flex; 
+        justify-content: flex-start;
+        gap: 5px; 
     }
     .detail-challenge-container-1{
         margin-top: 21%;
@@ -1787,6 +1951,34 @@ width: 300px
         margin-top: 20%;
     }
     .upload-complete{
-        margin-top: -500px;
+        margin-top: -100px;
     }
+    /*reward*/
+    .reward-list img {
+        max-width: 70px;
+    }
+    .reward-list-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(90px, 120px));
+        gap: 13px;
+    }
+    .reward-list p {
+        font-size: 12px;
+    }
+    .detail-challenge-back-btn {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .detail-challenge-back-btn a {
+    margin: 0;
+    }
+    .reward-text h2 ,.reward-text p {
+        color: #263238;
+        text-align: center;
+    }
+    
+    
 }
