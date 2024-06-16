@@ -946,9 +946,13 @@ color:#407E63;
 color:#FFFFFF;
 font-size:80%;
 }
+.recommendation-challenge-text h2 {
+    font-size: 30px;
+}
 .recommendation-challenge-text p{
 color:#407E63;
 text-align: left;
+font-size: 16px;
 }
 
 .kind-of-challenge-weekly-label{
@@ -1503,7 +1507,12 @@ text-align: center;
     color: #263238;
     text-align: left;
 }
-
+.reward-text h2 {
+    font-size: 36px;
+}
+.reward-text p {
+    font-size: 20px;
+}
 
 .reward-list-container {
     display: grid;
@@ -1613,11 +1622,16 @@ width: 300px
 .faq-element p{
     text-align: center;
     color:#407E63;
+    font-size: 24px;
+}
+.faq-element h1{
+    font-size: 48px;
 }
 
 .question-list p{
     color:#407E63;
     text-align: left;
+    font-size: 16px;
 }
 .faq-element img{
     width:300px
@@ -1629,6 +1643,12 @@ width: 300px
     margin-top:2%;
     text-align: center;
     margin-bottom: 1%;
+}
+.question-title-container h2{
+ font-size: 24px;
+}
+.question-list p {
+    font-size: 12px;
 }
 .question-container {
     display: flex;
@@ -1755,6 +1775,14 @@ width: 300px
     text-align: center;
     font-size: 34px;
 }
+.faq-element p{
+    text-align: center;
+    color:#407E63;
+    font-size: 18px;
+}
+.faq-element h1{
+    font-size: 34px;
+}
 .btn-register button,.btn-login button {
     font-size: 14px;
 }
@@ -1807,11 +1835,25 @@ width: 300px
     p{
         font-size: 13px;
     }
+    .recommendation-challenge-text h2 {
+        font-size: 22px;
+    }
+    .recommendation-challenge-text p{
+    font-size: 12px;
+    }
+    .reward-text h2 {
+        font-size: 26px;
+    }
+    .reward-text p {
+        font-size: 14px;
+    }
     .login-container,.forget-password-container,.register-container {
         padding-top: 20px;
         margin-top: 20px;
     }
-
+    .question-title-container h2{
+        font-size: 18px;
+    }
     .container-1 {
         max-width: 90%;
         margin: 0 auto;
