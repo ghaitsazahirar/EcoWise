@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Sertakan GSAP dari CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <!-- Optional: Sertakan ScrollTrigger jika diperlukan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../public/assets/img/eco_logo-2.png" alt="Website Logo">
+        </div>
+        <button class="login-button" onclick="window.location.href='login.html'">Masuk</button>
+    </header>
+    <div class="container-1">
+        <h1>Jadilah Pahlawan</h1>
+        <h1>Lingkungan dengan</h1>
+        <h1 id="ecowise-h1">EcoWise</h1>
+        <p>Pelajari cara mengelola sampah, ikuti tantangan seru, dan kumpulkan poin untuk hadiah menarik. Bersama EcoWise, ubah kebiasaan dan ciptakan masa depan yang lebih hijau. Mari beraksi sekarang!</p>
+        <div class="container-1-img">
+            <img src="../public/assets/img/character-1.png" alt="character-1">
+        </div>
+    </div>
+    <div class="container-2">
+        <h1>Fitur Unggulan</h1>
+        <p>EcoWise menawarkan berbagai fitur yang dirancang untuk mengedukasi dan memotivasi pengguna dalam pengelolaan sampah.</p>
+        <section class="fitur">
+            <div class="content">
+                <h2>Edukasi</h2>
+                <p>Pelajari berbagai aspek pengelolaan sampah, mulai dari pemisahan hingga daur ulang dan pengolahan sampah organik menjadi pupuk.</p>
+            </div>
+            <div class="image">
+                <img src="../public/assets/img/fitur-img.png" alt="">
+            </div>
+        </section>
+        <section class="fitur">
+            <div class="content">
+                <h2>Tantangan</h2>
+                <p>Ikuti tantangan menarik untuk meningkatkan kesadaran dan partisipasi dalam pengelolaan sampah.</p>
+            </div>
+            <div class="image">
+                <img src="../public/assets/img/tantangan-img.png" alt="">
+            </div>
+        </section>
+        <section class="fitur">
+            <div class="content">
+                <h2>Reward</h2>
+                <p>Dapatkan reward menarik atas partisipasi dan pencapaian dalam pengelolaan sampah.</p>
+            </div>
+            <div class="image">
+                <img src="../public/assets/img/reward-img.png" alt="">
+            </div>
+        </section>
+    </div>
+    <div class="container-3">
+        <h1>Bagaimana Menurut Mereka?</h1>
+        <div class="comments-section">
+            <div class="comment-container" id="comment-container">
+                <!-- Comment content will be inserted here by JavaScript -->
+            </div>
+            <div class="buttons">
+                <i id="prev-button" class="fas fa-chevron-left"></i>
+                <i id="next-button" class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-4">
+        <h1 class="inline">Dari</h1> 
+        <h1 id="ecowise-h1-2" class="inline">EcoWise</h1> 
+        <h1 class="inline">untuk</h1>
+        <h1>lingkungan yang ideal</h1>
+        <p>EcoWise adalah solusi inovatif untuk mengelola sampah dengan cara yang menyenangkan dan bermanfaat. Bergabunglah dengan EcoWise sekarang dan jadilah bagian dari perubahan!</p>
+        <button class="gabung" onclick="window.location.href='register.html'">Gabung</button>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 EcoWise. All rights reserved.</p>
+    </footer>
+    <!-- FIREBASE WAJIB -->
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    
+   <!-- FIREBASE PILIHAN -->
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+   <script src="../scripts/firebase-config.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
+</body>
+</html>

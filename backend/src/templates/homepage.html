@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage EcoWise</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Sertakan GSAP dari CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <!-- Optional: Sertakan ScrollTrigger jika diperlukan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <eco-header></eco-header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-profile" id="navbarProfile">
+            <!-- Profile info will be dynamically added here -->
+        </div>
+    </nav>
+    <div id="profile">
+        <div class="welcome-user">
+            <div class="container-homepage-img">
+                <img src="../public/assets/svg/environment-3.svg" alt="environtment-3">
+            </div>
+            <div class="welcome-text">
+                <p>Selamat Datang</p>
+                <h1 id="username">Loading...</h1>
+            </div>
+            <div class="text-point">
+                <p id="points"><i class="fa-solid fa-star"></i><span id="userPoints">Loading...</span> Points</p>
+            </div>
+            <button class="profile-button" onclick="toggleProfile()">View Profile</button>
+        </div>        
+    </div>
+
+    <div class="lets-change-point">
+        <div class="lets-chage-point-text">
+            <h2>Tukar poinmu dengan hadiah sekarang</h2>
+            <p>Tukarkan dengan berbagai pilihan yang berguna</p>
+        </div>
+        <div class="lets-chage-point-button">
+            <a href="index.html" class="icon-back">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="lets-do-challenge">
+        <h2>Ayo Lakukan Tantangan</h2>
+        <div class="kind-challenge">
+            <div class="kind-challenge-2" id="daily-challenge" onclick="navigateToChallenge('daily')">
+                <img src="../public/assets/svg/daily-challenge.svg" alt="daily-challenge">
+                <h3>Harian</h3>
+            </div>
+            <div class="kind-challenge-2" id="weekly-challenge" onclick="navigateToChallenge('weekly')">
+                <img src="../public/assets/svg/weekly-challenge.svg" alt="weekly-challenge">
+                <h3>Mingguan</h3>
+            </div>
+            <div class="kind-challenge-2" id="basic-challenge" onclick="navigateToChallenge('base')">
+                <img src="../public/assets/svg/dasar-challenge.svg" alt="dasar-challenge">
+                <h3>Dasar</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="challenge-homepage">
+        <div class="challenge-recommendation">
+            <h2>Rekomendasi Tantangan</h2>
+            <div class="lets-chage-point-button">
+                <a href="kategoritantangan.html" class="icon-others-challenge">
+                    <p>Lainnya</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="challenge-recommendation-container-homepage">
+            <div id="challenge-recommendations">
+                <!-- Rekomendasi tantangan akan ditambahkan di sini -->
+            </div>
+        </div>
+    </div>
+
+    <div id="recommended-challenge-list-container"></div>
+
+    <eco-footer></eco-footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <!-- Firebase modules -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <!-- Firebase configuration -->
+    <script src="../scripts/firebase-config.js"></script>
+    <!-- Function Navigation -->
+    <script src="../scripts/function-nav.js"></script>
+    <!-- Custom components -->
+    <script src="../scripts/components/header.js"></script>
+    <script src="../scripts/components/footer.js"></script>
+    <!-- Homepage functionality -->
+    <script src="../scripts/homepage.js"></script>
+</body>
+</html>

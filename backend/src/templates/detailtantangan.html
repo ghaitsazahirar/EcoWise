@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Tantangan</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../public/assets/img/web-logo-ecowise.png" sizes="64x64" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Sertakan GSAP dari CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <!-- Optional: Sertakan ScrollTrigger jika diperlukan -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <eco-header></eco-header>
+    <div class="detail-challenge-container-1">
+        <div class="detail-challenge-container-2">
+          <div class="detail-challenge-back-btn">
+            <a href="./kategoritantangan.html" class="icon-others-challenge">
+              <i class="fa-solid fa-arrow-left"></i>
+              <h3>Detail Tantangan</h3>
+            </a>
+          </div>
+          <h3 id="challenge-kind" class="kind-of-challenge"></h3>
+        </div>
+      </div>
+      <div class="detail-container">
+        <div class="detail-challenge">
+          <div class="detail-challenge-image">
+            <img id="challenge-image" src="" alt="">
+          </div>
+          <div class="detail-challenge-text">
+            <h1 id="challenge-title" class="challenge-title"></h1>
+            <p>Deskripsi:</p>
+            <p id="challenge-description" class="challenge-detail"></p>
+          </div>
+        </div>
+      </div>
+      <div class="detail-container">
+        <div class="challenge-steps">
+          <h2>Langkah Tantangan</h2>
+          <p id="challenge-steps-list"></p>
+        </div>
+      </div>
+      <div class="upload-image">
+        <div class="upload-image-2">
+        <div class="complete-challenge-text">
+                <h2>Selesaikan Tantangan Sekarang!</h2>
+        </div>
+        <div class="upload-image-button">
+            <button class="upload-button" onclick="window.location.href='uploadgambar.html'">Unggah Gambar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Tambahkan elemen challenge-container -->
+      <div id="challenge-container"></div>
+    <eco-footer></eco-footer>
+    <!-- FIREBASE WAJIB -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    
+    <!-- FIREBASE PILIHAN -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <!-- Firebase configuration -->
+    <script src="../scripts/firebase-config.js"></script>
+    <!-- Function Navigation -->
+    <script src="../scripts/function-nav.js"></script>
+    <!-- Custom components -->
+    <script src="../scripts/components/header.js"></script>
+    <script src="../scripts/components/footer.js"></script>
+    <script src="../scripts/detailtantangan.js"></script>
+</body>
+</html>

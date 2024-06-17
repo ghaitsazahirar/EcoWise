@@ -1,0 +1,1821 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+head img{
+    width: 70px;
+}
+
+.user-profile {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+#signOutButton{
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #F4B400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100%;
+}
+
+.header .login-button{
+    background-color: #F4B400;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-right: 10%;
+    transition: background-color 0.3s ease;
+}
+
+.header .login-button:hover {
+    background-color: #dea403;
+}
+
+.gabung{
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    font-size: 1em;
+    background-color: #F4B400;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.gabung:hover {
+    background-color: #dea403;
+}
+
+.container-1 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.container-1-img img{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    background-color: #8AAF9E;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.container-3{
+    text-align: center;
+    padding-top: 50px;
+    max-width: 100%;
+    background-color: #F5F5F5;
+}
+.container-4{
+    text-align: center;
+    padding-top: 50px;
+    max-width: 100%;
+    background-color: #8AAF9E;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+.container-4 p {
+    text-align: center;
+    margin: 0 5px;
+}
+
+.inline {
+    display: inline; /* Ensure elements are inline */
+    margin: 0 5px; /* Adjust margin as needed */
+}
+
+.fitur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #C5D7CF;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    text-align: left;
+}
+
+.fitur .content {
+    flex: 1; 
+}
+.content p {
+text-align: left;
+color: #407E63;
+}
+
+.fitur .image {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fitur img {
+    max-height: 100px; 
+}
+
+#ecowise-h1 {
+    background: linear-gradient(
+        to right, 
+        #F4B400 45%, 
+        #FFFF8D 47%, 
+        #89AF9F 50%, 
+        #6E897F 55%, 
+        #114E3B 80%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ecowise-h1-2 {
+    background: linear-gradient(
+        to right, 
+        #F4B400 15%, 
+        #FFFF8D 30%, 
+        #89AF9F 50%, 
+        #6E897F 55%, 
+        #114E3B 80%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2F4841;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2F4841;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3{
+    color: #2F4841;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.container-1.container-3,.comment-container{
+    color: #407E63;
+}
+p {
+    margin-bottom: 20px;
+    color: #F5F5F5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    margin-left: 10%;
+}
+.header .logo img {
+    width: 100px;/* Jarak kiri logo */
+}
+
+.comments-section {
+    position: relative;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.comment-container h3 {
+    margin: 5px 0;
+}
+
+.comment-container p {
+    font-style: italic;
+}
+
+.buttons {
+    top: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.buttons i {
+    color: #114E3B;
+    padding: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer {
+    background: #C5D7CF;
+    color: #26322F;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+.footer p {
+    color: #2F4841;
+    text-align: center;
+
+}
+
+/*Register*/
+.register-container {
+    padding-top: 50px;
+    max-width: 400px;
+    width: 80%;
+    margin: 50px auto; /* Center the container horizontally and provide top margin */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container h1{
+    text-align: center;
+}
+
+.register-container p{
+    color: #313131;
+    text-align: center;
+}
+
+.register-container img{
+    display: block; 
+    margin: 0 auto; 
+    width: 50%;
+    height: auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Halaman Login*/
+.icon-back-1{
+    font-size: 150%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.login-container,.forget-password-container {
+    padding-top: 50px;
+    max-width: 400px;
+    width: 80%;
+    margin: 50px auto; /* Center the container horizontally and provide top margin */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h1,p{
+    text-align: center;
+}
+
+.login-container p{
+    color: #313131;
+    text-align: center;
+}
+.login-container img{
+    display: block; 
+    margin: 0 auto; 
+    width: 50%;
+    height: auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-group-login {
+    position: relative;
+}
+.form-group {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group-login i {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    padding: 11px;
+    border-radius: 5px;
+    background-color: #89AF9F;
+    font-size: 100%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Agar ikon tidak mengganggu input */
+}
+
+/*Forget Password*/
+.forget-password-container img{
+    display: block; 
+    margin: 0 auto; 
+    width: 50%;
+    height: auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forget-password-container h1{
+    text-align: center;
+}
+.forget-password-container p{
+    color: #313131;
+    text-align: center;
+}
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+/* Style for inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+    border:none;
+    border-radius: 4px;
+    background-color: #EEEEEE;
+}
+input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: gray;
+    font-style: italic; 
+    font-size: 70%;
+}
+.have-account,.forget-password-i{
+    font-size: 13px;
+    text-decoration: underline;
+}
+a {
+    color: #2F4841;
+    text-decoration: none;
+}
+
+/* Style for the button */
+.btn-login button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #F4B400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
+
+.btn-login button:hover {
+    background-color: #dea403;
+}
+
+/*Separator*/
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.btn-register button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #8AAF9E;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-register button:hover {
+    background-color: #6f9785;
+}
+
+/*HOMEPAGE*/
+/* CSS untuk menambahkan efek blur pada header-content */
+.header-content.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.header-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: padding-top 0.5s ease; /* Tambahkan transisi untuk efek pergeseran */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    transition: filter 0.3s ease-in-out;
+    
+}
+
+.header-homepage .logo img {
+    width: 100px;
+}
+
+.profile-button i {
+    color: black;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.bar,
+.profile-button {
+    font-size: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -120%; /* Mulai di luar layar */
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1001;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    transition: top 0.3s ease; /* Tambahkan transisi untuk efek pergeseran */
+}
+
+.nav-menu.active {
+    top: 0; /* Posisi tampil */
+}
+
+.nav-menu .logo-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.nav-menu img {
+    max-width: 100px;
+}
+
+.logo-navbar img {
+    width: 65%;
+}
+
+.nav-menu .logo-navbar .fa-xmark {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+.logo-header img {
+    max-width: 90px;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*profil penggguna*/
+#profile {
+    margin-top: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.welcome-user {
+    display: flex;
+    align-items: center; /* Centers items vertically if they have different heights */
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column; /* Ensures the text inside is stacked vertically */
+}
+
+.text-point{
+    margin-right:0;
+}
+
+.welcome-text p,
+.welcome-text h1 {
+    margin: 0;
+    color: #407E63; /* Removes default margins for better alignment */
+}
+.text-point p{
+    color:#2F4841;
+}
+.text-point i {
+    padding: 5px;
+    font-size: 130%; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    background: linear-gradient(90deg, #F4B400, #FDD835, #FFFF8D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.container-homepage-img img{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-homepage-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*lets-change-poin*/
+.lets-change-point {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px 30px; /* Optional: padding around the container */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(197, 215, 207, 0.5); /* Adds a box shadow with the specified color */
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+.lets-change-point-text {
+    /* Optional: add some spacing around the text */
+    margin-right: 20px;
+}
+
+.lets-change-point-text p {
+    color:#407E63;
+    text-align: left;
+
+}
+.lets-change-point-text h2 {
+    color:#2F4841;
+
+}
+
+.lets-change-point-button {
+    /* Optional: add some spacing around the button */
+    margin-left: 20px;
+}
+
+.icon-back {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #8AAF9E;
+    background-color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 250%;
+    padding: 10px;
+}
+
+.icon-back i {
+    margin-right: 8px; /* Optional: space between icon and text */
+}
+
+/*unique-shape-challenge*/
+.container-shape{
+    margin-top: 12%;
+}
+.unique-shape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 60px 70px; /* Optional: padding around the container */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    background: linear-gradient(to right, #8AAF9E 0%, #C5D7CF 100%);
+    box-shadow: 0 4px 8px rgba(197, 215, 207, 0.5); /* Adds a box shadow with the specified color */
+    border-radius: 25px;
+}
+
+.unique-shape-text{
+margin-right: 4%;
+}
+.unique-shape-text p{
+text-align: left;
+}
+.unique-shape-text h1{
+text-align: left;
+}
+.unique-shape-image img{
+width:90%;
+}
+.unique-shape-image-education img{
+    width:90%;
+    }
+/*new-challenge*/
+.new-challenge{
+    margin-top: 5%;
+}
+.new-challenge h2{
+    text-align: left;
+    margin-left: 10%;
+}
+/*lets-do-challenge*/
+.lets-do-challenge{
+    margin-top: 2%;
+}
+.lets-do-challenge h2{
+    text-align: left;
+    margin-left: 10%;
+}
+.kind-challenge{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.kind-challenge-2{
+    background-color: #FFFFFF;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 2%;
+    box-shadow: 0 4px 8px rgba(197, 215, 207, 0.5);
+    cursor: pointer;;
+}
+
+.kind-challenge-2 img {
+    width: 70%;
+}
+
+.challenge-recommendation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left:-5px;
+    margin-right:-5px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px 30px; /* Optional: padding around the container */
+}
+
+.lets-chage-point-text {
+    /* Optional: add some spacing around the text */
+    margin-right: 20px;
+}
+
+.lets-chage-point-button {
+    /* Optional: add some spacing around the button */
+    margin-left: 20px;
+}
+
+.icon-others-challenge {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content inside the button */
+    padding: 10px 20px;
+    color: #8AAF9E;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.icon-others-challenge p {
+    margin: 0; /* Remove default margin from paragraph */
+    margin-right: 8px; /* Optional: space between text and icon */
+    color: #2F4841;
+}
+
+.icon-others-challenge i {
+    margin: 0; /* Remove default margin from icon */
+}
+
+/*new Challenge*/
+.challenge-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; /* Centers the container horizontally */
+    background-color: #FFFFFF;
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius: 15px;
+}
+.challenge-item-image{
+    margin-left: 10px;
+}
+.challenge-item-image img {
+    width:150px;
+}
+
+.challenge-item-text{
+    margin-left:2%;
+}
+
+.challenge-item-text h3{
+color: #FFFFFF;
+font-size:80%;
+}
+.challenge-item-text p{
+color:#407E63;
+}
+.new-challenge-daily {
+    background-color: #F4B400; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    width: 100px; /* Tentukan lebar tetap */
+    height: 50px; /* Tentukan tinggi tetap */
+    line-height: 50px; /* Agar teks vertikal rata tengah */
+    text-align: center; /* Agar teks horizontal rata tengah */
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 15px;
+}
+/*Recommendation Challenge*/
+.recommendation-challenge{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; /* Centers the container horizontally */
+    background-color: #FFFFFF;
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.recommendation-challenge-images{
+    margin-left: 10px;
+}
+.recommendation-challenge-images img {
+    width:150px;
+}
+
+.recommendation-challenge-text{
+    margin-left:2%;
+}
+
+.recommendation-challenge-text h3{
+color:#FFFFFF;
+font-size:80%;
+}
+.recommendation-challenge-text p{
+color:#407E63;
+text-align: left;
+}
+
+.kind-of-challenge-weekly-label{
+    background-color:#008000;
+    color:#FFFFFF;
+    padding:3px;
+    border-radius: 5px;
+}
+
+.kind-of-challenge-weekly {
+    background-color: #008000; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    width: 100px; /* Tentukan lebar tetap */
+    height: 50px; /* Tentukan tinggi tetap */
+    line-height: 50px; /* Agar teks vertikal rata tengah */
+    text-align: center; /* Agar teks horizontal rata tengah */
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kind-of-challenge-daily {
+    background-color: #F4B400; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    width: 100px; /* Tentukan lebar tetap */
+    height: 50px; /* Tentukan tinggi tetap */
+    line-height: 50px; /* Agar teks vertikal rata tengah */
+    text-align: center; /* Agar teks horizontal rata tengah */
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kind-of-challenge-base {
+    background-color: #0000FF; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    width: 100px; /* Tentukan lebar tetap */
+    height: 50px; /* Tentukan tinggi tetap */
+    line-height: 50px; /* Agar teks vertikal rata tengah */
+    text-align: center; /* Agar teks horizontal rata tengah */
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Page katrgori tantangan*/
+
+.challenge-page{
+    margin-top: 1%;
+    width: 100%;
+}
+.challenge-category {
+    width: 80%;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px 30px; /* Optional: padding around the container */
+}
+
+.challenge-category h2 {
+    margin-bottom: 20px; /* Beri jarak lebih besar antara h2 dan tombol */
+}
+
+.challenge-category-button {
+    display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
+    justify-content: flex-start; /* Menyelaraskan item ke tepi kiri */
+    gap: 10px; /* Memberikan jarak antar tombol */
+}
+
+.challenge-category-button button {
+    color: #000000; /* Warna teks tombol */
+    border: 1px solid #000000; /* Menambahkan border */
+    padding: 10px 20px; /* Menambahkan padding untuk tombol */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    display: inline-block; /* Membuat tombol inline-block */
+    font-size: 16px; /* Mengatur ukuran font */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 15px; /* Membuat sudut tombol melengkung */
+    background-color: transparent; /* Latar belakang transparan */
+    font-family: "Poppins", sans-serif;
+}
+
+.all-challenge-button.active,
+.daily-button.active,
+.weekly-button.active,
+.base-button.active {
+    color: #FFFFFF; /* Warna teks tombol */
+}
+
+.all-challenge-button.active {
+    background-color: #37474F; /* Latar belakang untuk tombol aktif Semua */
+    border: none;
+}
+
+.daily-button.active {
+    background-color: #F4B400; /* Latar belakang untuk tombol aktif Harian */
+    border: none;
+}
+
+.weekly-button.active {
+    background-color: #008000; /* Latar belakang untuk tombol aktif Mingguan */
+    border: none;
+}
+
+.base-button.active {
+    background-color: #0000FF; /* Latar belakang untuk tombol aktif Dasar */
+    border: none;
+}
+
+.challenge-recommendation-container {
+    display: none;
+}
+.challenge-recommendation-container.active {
+    display: flex;
+}
+
+/*Education*/
+.container-education{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; /* Centers the container horizontally */
+    width: 98%;
+    margin-top: 2%;
+}
+.education-container{
+    width: 95%;
+    
+}
+.container-education h2{
+    text-align: center;
+}
+
+.education-container p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.education-container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
+    gap: 30px;
+    padding: 20px;
+    background-color:none;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 15px;
+    justify-content: center; /* Menengahkannya secara horizontal */
+    margin-top: 2%;
+}
+
+#education-list-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Untuk menengahkannya secara horizontal */
+    text-align: center; /* Untuk menengahkannya secara horizontal */
+}
+
+#education-list-container:hover {
+    transform: scale(1.05); /* Efek zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#education-list-container img {
+    width: 100%;
+    height: auto;
+}
+
+.article-title {
+    font-size: 1.1rem;
+    margin: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.article-description {
+    font-size: 0.7rem;
+    margin: 0 30px 15px;
+    color: #666;
+    text-align: left;
+}
+
+.article-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero-image {
+    margin-top: 8%;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+.article-content {
+    margin-top: 20px;
+    line-height: 1.6;
+    padding:1% 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Halaman Detail Tantangan*/
+.detail-challenge-container-1{
+    margin-top: 10%;
+    width: 100%;
+}
+.detail-challenge-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left:-5px;
+    margin-right:-5px;
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.detail-challenge-back-btn {
+    display: flex;
+    align-items: center;
+}
+
+.detail-challenge-back-btn a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.detail-challenge-back-btn i {
+    margin-right: 8px; /* Menambah jarak antara ikon dan teks */
+}
+
+.detail-kind-challenge {
+    margin-left: auto; /* Mengatur elemen ini ke ujung kanan */
+}
+
+.detail-container{
+    margin-top: 1%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.detail-challenge {
+    display: flex;
+    width:90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk tampilan lebih baik */
+    background-color: #ffffff; /* Tambahkan background color putih */
+    border-radius: 8px; /* Tambahkan border-radius untuk sudut yang halus */
+    justify-content: center;
+}
+
+.detail-challenge-text p{
+color:#407E63;
+text-align: center;
+}
+.detail-challenge-image{
+    margin-top: 10px;
+}
+.detail-challenge-image img {
+   width: 90%;
+}
+
+.challenge-title {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.detail-kind-challenge p {
+    color: #FFFFFF;
+}
+.challenge-detail {
+    margin-top: 10px;
+    color: #555;
+}
+
+.challenge-steps {
+    display: flex;
+    width:90%;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk tampilan lebih baik */
+    background-color: #ffffff; /* Tambahkan background color putih */
+    border-radius: 8px; /* Tambahkan border-radius untuk sudut yang halus */
+}
+
+.upload-image {
+    margin-top: 1%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.challenge-steps p {
+    text-align: left;
+}
+
+.upload-image-2{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; /* Ubah arah flex ke kolom */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+
+.challenge-steps p {
+    color:#407E63;
+}
+.complete-challenge-text p{
+    color:#407E63;
+}
+.upload-image-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upload-button {
+    background-color: #8AAF9E; /* Green background */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px; /* Some padding */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Add a pointer on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the container an inline-block */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.upload-button:hover {
+    background-color: #6d897c; /* Darker green background on hover */
+}
+
+.upload-image-button {
+    margin: 20px 0;
+}
+
+.upload-button:hover {
+    background-color: #576e64;
+}
+
+.upload-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete-challenge {
+    margin-top: 11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.complete-challenge h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.upload-image-button {
+    margin-bottom: 20px; /* Ruang antara tombol unggah dan gambar pratinjau */
+}
+
+.image-preview {
+    width: 200px; /* Atur lebar gambar pratinjau */
+    height: 200px; /* Atur tinggi gambar pratinjau */
+    object-fit: cover; /* Atur agar gambar sesuai dengan kotak pratinjau */
+    margin-bottom: 20px; /* Ruang antara gambar pratinjau dan tombol selesai */
+}
+
+.complete-button {
+    background-color: #F4B400; /* Green background */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px; /* Some padding */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Add a pointer on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the container an inline-block */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1rem;
+    width: 50%; /* Set the width to 80% of the parent container */
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.image-upload{
+    width: 30%;
+}
+
+/*Upload berhasi*/
+.outer-container {
+    margin-top:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.upload-complete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.upload-complete {
+    margin-top:1%;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-complete-img{
+    width:30%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.upload-complete-text p{
+    color:#407E63;
+    text-align: center;
+}
+
+.upload-complete-text i {
+    padding: 5px;
+    font-size: 130%; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    background: linear-gradient(90deg, #F4B400, #FDD835, #FFFF8D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+/*Page Reward*/
+.container-reward-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: none;
+}
+
+.reward-container {
+    max-width: 1150px;
+    width: 100%;
+    background-color: none;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.reward-text {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.reward-text h2 ,.reward-text p {
+    color: #263238;
+    text-align: left;
+}
+
+
+.reward-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.reward-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center horizontally */
+    justify-content: center; /* Align items to the center vertically */
+    padding: 15px;
+    border: 5px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reward-list img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.reward-list p {
+    margin: 0;
+    color: #407E63;
+    text-align: center;
+}
+
+.confirm-reward{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-confirm-reward-1{
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.container-confirm-reward-1, .confirmation-container p{
+    color: #407E63;
+}
+.container-confirm-reward-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.confirmation-container {
+    text-align: center;
+}
+.confirmation-container img{
+width: 300px
+}
+.confirmation-message i {
+    background: linear-gradient(90deg, #F4B400, #FDD835, #FFFF8D);
+}
+
+.star-point {
+    display: flex;
+    align-items: center; /* Menjaga elemen pada garis tengah vertikal */
+    text-align: center;
+    justify-content: center;
+  }
+.confirmation-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.button-confirm{
+    background-color: #F4B400; /* Green background */
+    color: #FFFFFF; /* White text */
+    padding: 10px 40px; /* Some padding */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Add a pointer on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the container an inline-block */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.confirmation-container a {
+    text-decoration: underline;
+    font-size: small;
+}
+
+/*Faq Page*/
+.faq-container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:9%;
+    text-align: center;
+    padding: 20px 30px;
+}
+.faq-element p{
+    text-align: center;
+    color:#407E63;
+}
+
+.question-list p{
+    color:#407E63;
+    text-align: left;
+}
+.faq-element img{
+    width:300px
+}
+.faq-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:2%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.question-container {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen anak secara vertikal */
+    align-items: center; /* Menyelaraskan elemen anak di tengah secara horizontal */
+    justify-content: center; /* Menyelaraskan elemen anak di tengah secara vertikal */
+    margin-top: 1%;
+    text-align: center;
+    width: 90%;
+    padding: 20px 30px;
+}
+
+.question-list {
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px 30px;
+    margin-bottom: 20px; /* Menambahkan margin bawah agar ada jarak antar elemen */
+}
+
+
+.question-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.question-answer {
+    display: none; /* Sembunyikan jawaban secara default */
+}
+
+.question-title-container {
+    cursor: pointer; /* Ubah cursor menjadi pointer untuk menunjukkan interaktifitas */
+}
+
+.question-title-container.active + .question-answer {
+    display: block; /* Tampilkan jawaban ketika .active ditambahkan ke .question-title-container */
+}
+
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+    .nav-menu .logo-navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    /*Index*/
+    .container-2 p {
+        text-align: center;
+        margin: 0 5px;
+    }
+    .content p {
+        text-align: left;
+        }
+    .header-homepage {
+    }
+
+    .header-content {
+        margin-right:35px;
+    }
+
+    .header-homepage .logo img {
+        width: 80px; /* Mengurangi ukuran logo untuk ruang yang lebih sedikit */
+    }
+    .nav-menu{
+        width:40%;
+        margin: 0 3px;
+    }
+    #profile{
+        margin-top:30%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .container-homepage-img{
+        display: none;
+    }
+    .unique-shape{
+        margin-top:30%;
+    }
+    h1 {
+        font-size: 29px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+
+    .unique-shape-text{
+    margin-right: 40px;
+    margin-left: -40px;
+    }
+    .unique-shape-image img{
+    width:120px;
+     }
+    .unique-shape-image-education img{
+     width:150%;
+    }
+
+    .lets-change-point{
+        padding: 5px 10px;
+        width: 90%;
+        height:100;
+    }
+    .lets-change-point-text{
+        margin:0;
+        padding: 0;
+    }
+    .lets-change-point-button{
+        font-size: 14px;
+        padding: 0;
+        margin-right: 0;
+    }
+    .kind-challenge{
+        width: 90%;
+    }
+    .kind-challenge-2{
+        padding: 3px 3px;
+        border-radius: 15px;
+        width: 118px;
+        height: 100px;
+    }
+    .kind-challenge-2 img{
+        margin-top: 2px;
+        width: 50%x;
+    }
+    .kind-challenge-2 h3{
+        margin-bottom: 3px;
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .recommendation-challenge-images img {
+        width: 120px
+    }
+    .kind-of-challenge-weekly,.kind-of-challenge-daily,.kind-of-challenge-base {
+        width: 90px; /* Tentukan lebar tetap */
+        height: 40px; /* Tentukan tinggi tetap */
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .recommendation-challenge-text{
+        margin-left: 5px;
+    }
+
+    /*Edukasi*/
+    .education-container-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 150px));
+        gap: 20px;
+        padding: 10px;
+        background-color:none;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 15px;
+        justify-content: center; /* Menengahkannya secara horizontal */
+        margin-top: 2%;
+    }
+    .education-container h2{
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .education-container p {
+        margin-top: 3px;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 15px;
+    }
+    .faq-container-1{
+        margin-top: 20%;
+    }
+    .challenge-category {
+        width: 84%;
+        margin: 0 auto; /* Centers the container horizontally */
+        padding: 10px 20px; /* Optional: padding around the container */
+    }
+    
+    .challenge-category h2 {
+        margin-bottom: 20px; /* Beri jarak lebih besar antara h2 dan tombol */
+    }
+    
+    .challenge-category-button {
+        display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
+        justify-content: flex-start; /* Menyelaraskan item ke tepi kiri */
+        gap: 5px; /* Memberikan jarak antar tombol */
+    }
+    
+    .challenge-category-button button {
+        padding: 10px 20px; /* Menambahkan padding untuk tombol */
+        font-size: 12px; /* Mengatur ukuran font */
+        cursor: pointer; /* Mengubah kursor saat hover */
+        border-radius: 12px; 
+    }
+    .detail-challenge-container-1{
+        margin-top: 21%;
+    }
+    .upload-image-container{
+        margin-top: 20%;
+    }
+    .upload-complete{
+        margin-top: -500px;
+    }
+}
