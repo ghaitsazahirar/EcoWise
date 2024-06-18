@@ -3,6 +3,86 @@ import "../scripts/components/Header";
 import "../scripts/components/Footer";
 import { toggleMenu, closeMenu, navigateToDetail } from "../scripts/function-nav";
 
+// history-animation.js
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const uniqueShape = document.querySelector(".unique-shape");
+    const uniqueShapeText = document.querySelector(".unique-shape-text");
+    const uniqueShapeImage = document.querySelector(".unique-shape-image");
+
+    gsap.from(uniqueShapeText, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: uniqueShape,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    gsap.from(uniqueShapeImage, {
+        opacity: 0,
+        x: -50,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: uniqueShape,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    const historyButtons = document.querySelectorAll(".history-button button");
+
+    historyButtons.forEach(button => {
+        gsap.from(button, {
+            opacity: 0,
+            x: -50,
+            duration: 1,
+            scrollTrigger: {
+                trigger: button,
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
+
+    const historyList = document.getElementById("history-list");
+
+    gsap.from(historyList, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: historyList,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    // Animasi untuk elemen-elemen dalam daftar riwayat
+    gsap.utils.toArray("#history-list > div").forEach(elem => {
+        gsap.from(elem, {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            scrollTrigger: {
+                trigger: elem,
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
+});
 
 function loadChallengesHistory() {
     const container = document.getElementById('history-list');

@@ -22,6 +22,8 @@ module.exports = {
     confirmation: path.resolve(__dirname, 'src/scripts/confirmation.js'),
     history: path.resolve(__dirname, 'src/scripts/history.js'),
     faq: path.resolve(__dirname, 'src/scripts/faq.js'),
+    confirm_email: path.resolve(__dirname, 'src/scripts/confirm-email.js'),
+    confirmEmailSuccess: path.resolve(__dirname, 'src/scripts/confirmEmailSuccess.js'),
   },
   output: {
     filename: '[name].bundle.js',
@@ -130,6 +132,17 @@ module.exports = {
       template: path.resolve(__dirname, 'src/templates/history.html'),
       chunks: ['history'],
     }),
+    new HtmlWebpackPlugin({
+      filename: 'confirm-email.html',
+      template: path.resolve(__dirname, 'src/templates/confirm-email.html'),
+      chunks: ['confirm_email'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'confirmEmailSuccess.html',
+      template: path.resolve(__dirname, 'src/templates/confirmEmailSuccess.html'),
+      chunks: ['confirmEmailSuccess'],
+    }),
+
 
 
     new CopyWebpackPlugin({

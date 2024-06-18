@@ -30,8 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function confirmReward() {
-    alert('Reward Anda telah dikonfirmasi!');
-    // Tambahkan logika tambahan di sini, misalnya mengarahkan ke halaman lain atau mengirim data ke server
-}
 
