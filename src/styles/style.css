@@ -531,10 +531,11 @@ a {
 
 /*HOMEPAGE*/
 /* CSS untuk menambahkan efek blur pada header-content */
-.header-content.blur {
+.header-content.blur, main.blur {
     filter: blur(5px);
     transition: filter 0.3s ease;
 }
+
 
 .header-homepage {
     display: flex;
