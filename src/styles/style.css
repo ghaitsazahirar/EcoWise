@@ -1041,6 +1041,7 @@ font-size: 16px;
     border-radius: 15px; /* Membuat sudut tombol melengkung */
     background-color: transparent; /* Latar belakang transparan */
     font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 .all-challenge-button.active,
@@ -1610,6 +1611,178 @@ width: 300px
     font-size: small;
 }
 
+/*History*/
+.history-page{
+    margin-top: 1%;
+    width: 100%;
+}
+.kind-history {
+    width: 80%;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px 30px; /* Optional: padding around the container */
+}
+.history-button {
+    display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
+    justify-content: center; /* Menyelaraskan item ke tepi kiri */
+    gap: 10px; /* Memberikan jarak antar tombol */
+}
+
+.history-button button {
+    color: #000000; /* Warna teks tombol */
+    border: 3px solid #FFFFFF; /* Menambahkan border */
+    padding: 10px 20px; /* Menambahkan padding untuk tombol */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    text-decoration: none; /* Menghapus garis bawah pada teks */
+    display: inline-block; /* Membuat tombol inline-block */
+    font-size: 18px; /* Mengatur ukuran font */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    border-radius: 15px; /* Membuat sudut tombol melengkung */
+    background-color: transparent; /* Latar belakang transparan */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.reward-history-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto; /* Centers the container horizontally */
+    background-color: #FFFFFF;
+    margin-bottom: 1%;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+.reward-history-list-text p {
+   text-align: left;
+   color: #407E63;
+   font-family: "Poppins", sans-serif;
+}
+
+.reward-history-list-images{
+    margin-left: 10px;
+}
+.reward-history-list-images img {
+    width:120px;
+}
+
+/* Warna tombol aktif */
+.history-button button.active {
+    background-color: #C5D7CF;
+    border: none;
+}
+
+.challenge-status.challenge-status-diterima{
+    background-color: #008000; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    padding: 5px 10px;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 10px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.challenge-status.challenge-status-ditolak{
+    background-color: #FF0000; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    padding: 5px 10px;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 10px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.challenge-status.challenge-status-menunggu{
+    background-color: #F4B400; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    padding: 5px 10px;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 10px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.reward-history-list-text .exchange-date {
+    color: #407E63;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.reward-history-list-text .exchange-description {
+    color: #2F4841;
+    font-size: 20px; /* Ukuran teks untuk deskripsi */
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.reward-history-list-text .exchange-amount {
+    /* Gaya untuk jumlah penukaran */
+    font-weight: bold;
+    color: #000000; /* Warna hijau misalnya untuk menandakan positif */
+    font-size: 20px; /* Ukuran teks yang lebih besar untuk jumlah */
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.exchange-status {
+    font-size: 12px; /* Atur ukuran font umum untuk semua status */
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+.exchange-status.exchange-status-berhasil {
+    background-color: #008000; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    padding: 5px 10px;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 10px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.exchange-status.exchange-status-menunggu {
+    background-color: #F4B400; /* Ganti dengan warna yang diinginkan */
+    display: inline-block; /* Agar elemen hanya sebesar konten */
+    padding: 5px 10px;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam ukuran */
+    border-radius: 10px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.reward-history-list-images {
+    /* Container untuk gambar */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style tambahan sesuai kebutuhan */
+.history-button button {
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+}
+
+.history-button button:focus {
+    outline: none;
+}
+
 /*Faq Page*/
 .faq-container-1{
     display: flex;
@@ -2022,5 +2195,16 @@ width: 300px
         text-align: center;
     }
     
-    
+    .reward-history-list{
+        padding: 5px 10px;
+        width: 80%;
+        margin-bottom: 15px;
+
+    }
+    .reward-history-list-text .exchange-description {
+        font-size: 15px;
+    }
+    .reward-history-list-images img {
+        width:100px;
+    }
 }

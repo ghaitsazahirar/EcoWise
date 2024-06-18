@@ -20,6 +20,7 @@ module.exports = {
     reward: path.resolve(__dirname, 'src/scripts/reward.js'),
     ubahpassword: path.resolve(__dirname, 'src/scripts/ubahpassword.js'),
     confirmation: path.resolve(__dirname, 'src/scripts/confirmation.js'),
+    history: path.resolve(__dirname, 'src/scripts/history.js'),
     faq: path.resolve(__dirname, 'src/scripts/faq.js'),
   },
   output: {
@@ -123,6 +124,11 @@ module.exports = {
       filename: 'faqpage.html',
       template: path.resolve(__dirname, 'src/templates/faqpage.html'),
       chunks: ['faq'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'history.html',
+      template: path.resolve(__dirname, 'src/templates/history.html'),
+      chunks: ['history'],
     }),
 
 

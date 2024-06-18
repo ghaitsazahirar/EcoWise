@@ -1,0 +1,30 @@
+[
+    {
+        "date": "2024-03-18",
+        "platform": "tokopedia",
+        "points": 100,
+        "amount": 50000,
+        "status": "Proses"
+    },
+    {
+        "date": "2024-04-02",
+        "platform": "shopee",
+        "points": 100,
+        "amount": 50000,
+        "status": "Berhasil"
+    },
+    {
+        "date": "2024-04-15",
+        "platform": "tokopedia",
+        "points": 100,
+        "amount": 50000,
+        "status": "Berhasil"
+    },
+    {
+        "date": "2024-05-01",
+        "platform": "shopee",
+        "points": 100,
+        "amount": 50000,
+        "status": "Proses"
+    }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat</title>
+    <link rel="icon" href="assets/img/web-logo-ecowise.png" sizes="64x64" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <eco-header></eco-header>
+    <div class="container-shape">
+        <div class="unique-shape">
+            <div class="unique-shape-text">
+                <h1>Riwayat</h1>
+                <p>Lihat daftar riwayat pencapainmu. Terus berikan langkah nyata untuk bumi yang lebih baik.</p>
+            </div>
+            <div class="unique-shape-image">
+                <img src="assets/svg/save-earth.svg" alt="save-earth">
+            </div>
+        </div>
+    </div>
+    <div class="history-page">
+        <div class="kind-history">
+            <div class="history-button">
+                <button class="challenge-history-button" onclick="toggleHistory('challenges')">Tantangan</button>
+                <button class="reward-history-button" onclick="toggleHistory('rewards')">Penukaran</button>
+            </div>            
+        </div>
+        <div id="history-list">
+            <!-- Challenges will be inserted here -->
+        </div>
+    </div>
+    <eco-footer></eco-footer>
+</body>
+</html>

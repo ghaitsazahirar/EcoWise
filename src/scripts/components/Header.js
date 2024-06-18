@@ -37,6 +37,10 @@ class EcoHeader extends HTMLElement {
                 <i class="fa-solid fa-gift"></i>
             </div>
             <div class="logo-navbar">
+                <a href="history.html">Riwayat</a>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div class="logo-navbar">
                 <a href="faqpage.html">FAQ</a>
                 <i class="fa-solid fa-comments"></i>
             </div>
